@@ -10,21 +10,21 @@ const About = () => {
     bg-blue-900 text-gray-300 md:p-14 font-semibold"
     >
       <div>
-        <h1 className="text-red-400 font-bold text-3xl text-center mb-5">
+        <h1 className="text-red-400 font-bold text-3xl text-center mb-5 pt-5 md:p-0">
           About me!
         </h1>
         <div className="hero-content flex-col gap-20 lg:flex-row">
-          <div className="md:w-1/3 w-full ">
+          <div className="lg:w-1/3 w-full ">
             <img
               src="https://i.ibb.co/Z1bJ24x/programming.jpg"
               className="w-full h-[300px] rounded-lg drop-shadow-md hover:drop-shadow-xll"
             />
           </div>
-          <div className="md:w-2/3">
-            <h1 className="text-4xl font-bold mb-3">
+          <div className="lg:w-2/3">
+            <h1 className="text-2xl md:text-4xl font-bold mb-3">
               Hi! I'am Al-amin Hossain
             </h1>
-            <h1 className="text-2xl font-bold text-green-300">
+            <h1 className="text-xl md:text-3xl font-bold text-green-300">
               Front End Web Developer.
             </h1>
             <p className="py-6">

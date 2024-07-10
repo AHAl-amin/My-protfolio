@@ -8,7 +8,7 @@ const Banner = () => {
        <div className="flex-1 ">
        <img
           src="https://i.ibb.co/x2wkVkr/Whats-App-Image-2024-07-04-at-10-43-40-AM.jpg"
-          className=" rounded-full shadow-3xl md:h-[400px] md:w-2/3 h-[300px] mx-auto"
+          className=" rounded-full shadow-3xl lg:h-[400px] lg:w-2/3 h-[300px] w-[300px] mx-auto  "
         />
        </div>
         <div className="flex-1">
