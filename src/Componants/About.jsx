@@ -47,7 +47,7 @@ const About = () => {
                 <span className="font-bold text-blue-300">
                   <FaPhone />
                 </span>{" "}
-                01919457711
+                
               </p>
 
               <p className="flex items-center gap-3">

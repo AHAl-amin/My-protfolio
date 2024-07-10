@@ -39,8 +39,8 @@ const Banner = () => {
          <a href="" className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"><FaInstagram /></a>  
          </div>
           
-          <button className="btn btn-outline btn-error  mr-5"><span className="text-black font-bold">Hire me!</span></button>
-          <button className="btn btn-outline btn-error"><span className="text-black font-bold">view projects</span></button>
+          <button className="btn btn-outline btn-error  mr-5"><span className="text-black font-bold">Download CV</span></button>
+          <button className="btn btn-outline btn-error"><span className="text-black font-bold">Download resume</span></button>
          
         </div>
       </div>
