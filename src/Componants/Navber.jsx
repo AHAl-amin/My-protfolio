@@ -44,7 +44,7 @@ const Navber = () => {
            {navOptions}
           </ul>
         </div>
-        <a className="btn btn-ghost text-3xl "><span className="mr-[-7px] text-red-600">A</span>lamin.</a>
+        <a className="btn btn-ghost text-3xl "><span className="mr-[-7px] text-red-600 ">A</span>lamin.</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
