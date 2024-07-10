@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Banner = () => {
   return (
-    <div className="hero h-full bg-gradient-to-r from-violet-500 to-fuchsia-500 md:py-5 ">
+    <div className="hero h-full  md:py-5 ">
       <div className="hero-content flex-col lg:flex-row-reverse gap-10 p-10 mt-12">
        <div className="flex-1 ">
        <img

@@ -14,10 +14,12 @@ import {
 import Roots from './Componants/Roots';
 import Home from './Componants/Home';
 import About from './Componants/About';
-import Educatin from './Componants/Educatin';
+
 import Contact from './Componants/Contact';
 import Skills from './Componants/Skills';
 import Service from './Componants/Service';
+
+import Education from './Componants/Education';
 
 
 
@@ -37,7 +39,7 @@ const router = createBrowserRouter([
       
       {
         path:'/education',
-        element:<Educatin></Educatin>
+        element:<Education></Education>
       },
       
       {
@@ -54,6 +56,7 @@ const router = createBrowserRouter([
         path:'/service',
         element:<Service></Service>
       },
+     
       
     ]
   },

@@ -9,6 +9,7 @@ const Navber = () => {
 <li className="font-bold"><Link to="/about">About</Link></li>
 
 <li className="font-bold"><Link to="/education">Education </Link></li>
+<li className="font-bold"><Link to="/education">Experience </Link></li>
 
 <li className="font-bold"><Link to="/contact">Contact</Link></li>
 

@@ -7,10 +7,10 @@ const About = () => {
   return (
     <div
       className="hero 
-    bg-blue-900 text-gray-300 md:p-14 font-semibold"
+    md:p-14 font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500"
     >
       <div>
-        <h1 className="text-red-400 font-bold text-3xl text-center mb-5 pt-5 md:p-0">
+        <h1 className="text-red-800 font-bold text-3xl text-center mb-5 pt-5 md:p-0">
           About me!
         </h1>
         <div className="hero-content flex-col gap-20 lg:flex-row">
@@ -24,7 +24,7 @@ const About = () => {
             <h1 className="text-2xl md:text-4xl font-bold mb-3">
               Hi! I'am Al-amin Hossain
             </h1>
-            <h1 className="text-xl md:text-3xl font-bold text-green-300">
+            <h1 className="text-xl md:text-3xl font-bold text-green-400">
               Front End Web Developer.
             </h1>
             <p className="py-6">
@@ -44,20 +44,20 @@ const About = () => {
                 <span className="font-bold">Language :</span> Bangla,English
               </p>
               <p className="flex items-center gap-3">
-                <span className="font-bold text-green-400">
+                <span className="font-bold text-blue-300">
                   <FaPhone />
                 </span>{" "}
                 01919457711
               </p>
 
               <p className="flex items-center gap-3">
-                <span className="font-bold text-green-400">
+                <span className="font-bold text-blue-300">
                   <MdOutlineMail />
                 </span>
                 mdalaminhossain573190@gmail.com
               </p>
               <p className="flex items-center gap-3">
-                <span className="font-bold text-green-400">
+                <span className="font-bold text-blue-300">
                   <FaLocationDot></FaLocationDot>
                 </span>
                 Fromgate,Dhaka
