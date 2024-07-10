@@ -11,14 +11,14 @@ const Navber = () => {
 <li className="font-bold"><Link to="/education">Education </Link></li>
 <li className="font-bold"><Link to="/education">Experience </Link></li>
 
-<li className="font-bold"><Link to="/contact">Contact</Link></li>
 
 <li className="font-bold"><Link to="/skils">Skils </Link></li>
 <li className="font-bold"><Link to="/service">My service </Link></li>
+<li className="font-bold"><Link to="/contact">Contact</Link></li>
     </>
   return (
 
-    <div className="navbar bg-base-100  fixed bg-opacity-30 z-10">
+    <div className="navbar  fixed bg-opacity-30 z-10">
       <div className="navbar-start  ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

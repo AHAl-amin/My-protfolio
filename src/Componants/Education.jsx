@@ -3,7 +3,7 @@ import { PiStudent } from "react-icons/pi";
 
 const Education = () => {
   return (
-    <div className="flex gap-10 lg:px-14 py-10 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <div className="flex lg:flex-row flex-col gap-10 lg:px-14 p-5 bg-gradient-to-r from-violet-500 to-fuchsia-500">
       <div className="flex-1">
         <div className="space-y-2">
           <h1 className="font-bold text-4xl text-white flex items-center mr-2">
@@ -13,7 +13,7 @@ const Education = () => {
             Education
           </h1>
           <h1 className="text-3xl font-bold text-green-400">SSC</h1>
-          <h2 className="font-bold text-2xl">
+          <h2 className="font-bold md:text-2xl text-[18px]">
             Kurua High School,Shreebordi,Sherpur
           </h2>
           <p className="text-gray-300 font-semibold">
@@ -24,9 +24,9 @@ const Education = () => {
         <div className="space-y-2 mt-6">
                 
                 
-                <h1 className="text-3xl font-bold text-green-400">Diploma-In-Engineering</h1>
+                <h1 className="md:text-3xl text-[28px] font-bold text-green-400">Diploma-In-Engineering</h1>
                 <h2 className="font-bold text-2xl">Sherpur Polytechnic Institute</h2>
-                <p className="text-gray-300 font-semibold">I am a student of the Computer Department at Sherpur Polytechnic Institute.Now 8th Semester Running, I accepted Graduation in last time 2024.</p>
+                <p className="text-gray-300 font-semibold">I am a student of the Computer science and technology  at Sherpur Polytechnic Institute.Now 8th Semester Running, I accepted Graduation in last time 2024.</p>
                 </div>
       </div>
       <div className="flex-1">
@@ -39,7 +39,7 @@ const Education = () => {
             Experience
           </h1>
           <h1 className="text-3xl font-bold text-green-400">Jr. Web Development</h1>
-          <h2 className="font-bold text-2xl">
+          <h2 className="font-bold md:text-2xl text-[18px]">
             Kurua High School,Shreebordi,Sherpur
           </h2>
           <p className="text-gray-300 font-semibold">

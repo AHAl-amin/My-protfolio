@@ -1,16 +1,18 @@
 import About from "./About";
 import Banner from "./Banner";
 import Education from "./Education";
+import Skills from "./Skills";
 
 
 
 
 const Home = () => {
     return (
-        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+        <div className="">
             <Banner></Banner>
             <About></About>
             <Education></Education>
+            <Skills></Skills>
             
           
             
