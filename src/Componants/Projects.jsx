@@ -19,12 +19,12 @@ const Projects = () => {
               readers on specific topics.
             </p>
             <div className="card-actions gap-4 mt-5 flex justify-center  ">
-              <Link to="" className="btn bg-orange-300">
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-11-client-site" className="btn bg-orange-300">
                 Client site
               </Link>
-              <Link className="btn bg-orange-300">Backend site</Link>
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-11-server-site" className="btn bg-orange-300">Server site</Link><br />
 
-              <Link className="btn bg-orange-300 ">Live link</Link>
+              <Link target="_blank" to="https://assaignment-eleven.web.app/" className="btn bg-orange-300 ">Live   link</Link>
             </div>
           </div>
         </div>
@@ -39,12 +39,12 @@ const Projects = () => {
               accessible to users of all experience levels.
             </p>
             <div className="card-actions gap-4 mt-5 flex justify-center  ">
-              <Link to="" className="btn bg-orange-300">
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-12-client-site" className="btn bg-orange-300">
                 Client site
               </Link>
-              <Link className="btn bg-orange-300">Backend site</Link>
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-12-server-site" className="btn bg-orange-300">Server site</Link><br />
 
-              <Link className="btn bg-orange-300 ">Live link</Link>
+              <Link target="_blank" to="https://fitnesspal-assignment.web.app/" className="btn bg-orange-300 ">Live link</Link>
             </div>
           </div>
         </div>
@@ -56,12 +56,12 @@ const Projects = () => {
             
             </p>
             <div className="card-actions gap-4 mt-5 flex justify-center  ">
-              <Link to="" className="btn bg-orange-300">
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-10-client-site" className="btn bg-orange-300">
                 Client site
               </Link>
-              <Link className="btn bg-orange-300">Backend site</Link>
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-10-server-site" className="btn bg-orange-300">Server site</Link><br />
 
-              <Link className="btn bg-orange-300 ">Live link</Link>
+              <Link target="_blank" to="https://assaignment-ten-4a605.web.app/" className="btn bg-orange-300 ">Live link</Link>
             </div>
           </div>
         </div>
