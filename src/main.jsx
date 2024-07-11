@@ -20,6 +20,7 @@ import Skills from './Componants/Skills';
 import Service from './Componants/Service';
 
 import Education from './Componants/Education';
+import Projects from './Componants/Projects';
 
 
 
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path:'/service',
         element:<Service></Service>
+      },
+      {
+        path:'/projects',
+        element:<Projects></Projects>
       },
      
      

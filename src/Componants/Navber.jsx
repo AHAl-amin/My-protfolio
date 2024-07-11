@@ -14,6 +14,7 @@ const Navber = () => {
 
 <li className="font-bold"><Link to="/skils">Skils </Link></li>
 <li className="font-bold"><Link to="/service">My service </Link></li>
+<li className="font-bold"><Link to="/projects">Projects</Link></li>
 <li className="font-bold"><Link to="/contact">Contact</Link></li>
     </>
   return (
@@ -39,7 +40,7 @@ const Navber = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
           >
            {navOptions}
           </ul>
@@ -47,7 +48,7 @@ const Navber = () => {
         <a className="btn btn-ghost text-3xl "><span className="mr-[-7px] text-red-600 ">A</span>lamin.</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-[16px]">
           {navOptions}
         </ul>
       </div>
