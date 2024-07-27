@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa";
 
 import { Typewriter } from "react-simple-typewriter";
-import resume from '../assets/myCV.png'
+
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -51,7 +52,7 @@ const Banner = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://www.linkedin.com/checkpoint/challenge/AgFrgfH23rJErAAAAZCgAGcPs_8D_rIztSdwN9Kq8q9mvAO1J5PxF9-WbgTd7LQW5Z9q6NfCY8moAq4gMldBld0uJBFOBg?ut=07CKh9MlvuBHk1"
+              href="www.linkedin.com/in/al-amin-hossain-339463319"
               target="_blank"
               className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
             >
@@ -80,19 +81,23 @@ const Banner = () => {
             </a>
           </div>
 
-         
-
           <div className="space-x-3">
-          <button className="btn btn-outline btn-error">
-            <a href={resume} download='resume'>
-              <span className="text-black font-bold">Download CV</span>
-            </a>
-          </button>
-          <button className="btn btn-outline btn-error">
-            <a href={resume} download='resume'>
-              <span className="text-black font-bold">Download resume</span>
-            </a>
-          </button>
+            <button className="btn btn-outline btn-error">
+              <Link
+                className="text-black font-bold"
+                to="https://drive.google.com/u/0/uc?id=1-FD6cv1x5sM6JhtEss0HqOYEL1whs5vj&export=download"
+              >
+                Download CV
+              </Link>
+            </button>
+            <button className="btn btn-outline btn-error">
+              <Link
+                className="text-black font-bold"
+                to="https://drive.google.com/u/0/uc?id=1-FD6cv1x5sM6JhtEss0HqOYEL1whs5vj&export=download"
+              >
+                Download resume
+              </Link>
+            </button>
           </div>
         </div>
       </div>

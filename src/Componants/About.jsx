@@ -3,7 +3,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
 
+// import { useCallback } from "react";
+// import Particles from "react-tsparticles";
+
+// import { loadSlim } from "tsparticles-slim";
+
 const About = () => {
+
+
+ 
   return (
     <div
       className="hero 
@@ -46,7 +54,8 @@ const About = () => {
               <p className="flex items-center gap-3">
                 <span className="font-bold text-blue-300">
                   <FaPhone />
-                </span>{" "}
+                </span>
+                +8801919457711
                 
               </p>
 
@@ -66,13 +75,14 @@ const About = () => {
             <div className="text-3xl flex gap-4 mt-5 text- ">
               <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://www.facebook.com/profile.php?id=100052719871178" target="_blank"><FaFacebookF /></a>
               <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://github.com/Alamin573190" target="_blank"><FiGithub/></a>
-              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://www.linkedin.com/login" target="_blank"><FaLinkedinIn/></a>
+              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="www.linkedin.com/in/al-amin-hossain-339463319" target="_blank"><FaLinkedinIn/></a>
 
              
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
