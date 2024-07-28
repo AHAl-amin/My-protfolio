@@ -85,7 +85,7 @@ const Banner = () => {
             <button className="btn btn-outline btn-error">
               <Link
                 className="text-black font-bold"
-                to="https://drive.google.com/u/0/uc?id=1-FD6cv1x5sM6JhtEss0HqOYEL1whs5vj&export=download"
+                to="https://drive.google.com/uc?id=1cdvMVwNazybc_6Y9Big0zKFTa5VgtSm-&export=download#mrlaboratory"
               >
                 Download CV
               </Link>
