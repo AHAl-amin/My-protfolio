@@ -52,7 +52,7 @@ const Banner = () => {
               <FaFacebook />
             </a>
             <a
-              href="www.linkedin.com/in/al-amin-hossain-339463319"
+              href="https://www.linkedin.com/in/al-amin-hossain-339463319/"
               target="_blank"
               className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
             >
@@ -66,14 +66,14 @@ const Banner = () => {
               <FaGithub />
             </a>
             <a
-              href=""
+              href="#"
               target="_blank"
               className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
             >
               <FaTwitter />
             </a>
             <a
-              href=""
+              href="#"
               target="_blank"
               className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
             >

@@ -44,7 +44,7 @@ const Roots = () => {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: false,
+                            enable: true,
                             mode: "push",
                         },
                         onHover: {
