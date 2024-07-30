@@ -9,31 +9,38 @@ import {
 import { Typewriter } from "react-simple-typewriter";
 
 import { Link } from "react-router-dom";
+import {  Roll,  } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
     <div className="hero h-full  md:py-5 ">
       <div className="hero-content flex-col lg:flex-row-reverse gap-10 p-10 mt-12">
         <div className="flex-1 ">
+         
+        <Roll>
+
           <img
             src="https://i.ibb.co/x2wkVkr/Whats-App-Image-2024-07-04-at-10-43-40-AM.jpg"
             className=" rounded-full shadow-3xl lg:h-[400px] lg:w-2/3 h-[300px] w-[300px] mx-auto  "
           />
+        </Roll>
+        
         </div>
         <div className="flex-1">
           <h1 className=" text-2xl font-bold">Hello!</h1>
           <h1 className="text-3xl font-bold text-orange-800">
             <Typewriter
               className="text-red-400"
-              words={["I'm Al-amin"]}
+              words={["I'm Al-amin "]}
               loop={Infinity}
               cursor
-              cursorStyle="_"
+              cursorStyle="_ "
               typeSpeed={80}
               deleteSpeed={70}
               delaySpeed={1000}
             />
           </h1>
+
           <h1 className=" text-4xl font-bold mt-5">Web developer.</h1>
           <p className="py-6 font-semibold">
             Hello, I'm Alamin Hossain.I have been working in web development for
@@ -93,7 +100,7 @@ const Banner = () => {
             <button className="btn btn-outline btn-error">
               <Link
                 className="text-black font-bold"
-                to="https://drive.google.com/u/0/uc?id=15n24ONvLTMkgMsMHkwqvaVWSQf8bkyTA&export=download"
+                to="https://drive.google.com/u/0/uc?id=15n24ONvLTMkgMsMHkwqvaVWSQf8bkyTAP&export=download"
               >
                 Download resume
               </Link>

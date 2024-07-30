@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import { FaShoppingBag } from "react-icons/fa";
 import { PiStudent } from "react-icons/pi";
 
@@ -5,6 +6,9 @@ const Education = () => {
   return (
     <div className="flex lg:flex-row flex-col gap-10 lg:px-14 p-5 bg-gradient-to-r from-violet-500 to-fuchsia-500">
       <div className="flex-1">
+        <Fade direction="down">
+
+       
         <div className="space-y-2">
           <h1 className="font-bold text-4xl text-white flex items-center mr-2">
             <span className="text-5xl ">
@@ -28,12 +32,15 @@ const Education = () => {
                 <h2 className="font-bold text-2xl">Sherpur Polytechnic Institute</h2>
                 <p className="text-gray-300 font-semibold">I am a student of the Computer science and technology  at Sherpur Polytechnic Institute.Now 8th Semester Running, I accepted Graduation in last time 2024.</p>
                 </div>
+      </Fade >
       </div>
       <div className="flex-1">
+
       <div className="flex-1">
+        <Fade direction="down">
         <div className="space-y-2">
           <h1 className="font-bold text-4xl text-white flex items-center mr-2">
-            <span className="text-5xl ">
+            <span className="text-5xl mr-3  ">
             <FaShoppingBag/>
             </span>{" "}
             Experience
@@ -49,6 +56,7 @@ const Education = () => {
           </p>
         </div>
         
+        </Fade>
       </div>
       </div>
     </div>

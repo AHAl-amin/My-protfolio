@@ -1,3 +1,5 @@
+import { Fade } from "react-awesome-reveal";
+
 const Service = () => {
   return (
     <div>
@@ -5,7 +7,9 @@ const Service = () => {
         My Service
       </h2>
       <div className="flex md:flex-row flex-col gap-6 py-10 px-5 text-white">
-        <div className="card bg-sky-900 shadow-xl">
+        <Fade direction="left">
+
+        <div className="card bg-sky-900 shadow-xl flex-1 h-full">
           <figure className="px-10 pt-10">
             <img
               src="https://i.ibb.co/ZcF7fCL/modern-web-design-concept-with-flat-style-23-2147933488.jpg"
@@ -19,7 +23,10 @@ const Service = () => {
            
           </div>
         </div>
-        <div className="card bg-sky-900 shadow-xl">
+        </Fade>
+        <Fade direction="down">
+          
+        <div className="card bg-sky-900 shadow-xl flex-1 h-full">
           <figure className="px-10 pt-10">
             <img
               src="https://i.ibb.co/zxKgn6L/web-design-concept-with-flat-style-23-2147854683.jpg"
@@ -33,7 +40,10 @@ const Service = () => {
            
           </div>
         </div>
-        <div className="card bg-sky-900 shadow-xl">
+          </Fade>
+          <Fade direction="right">
+          
+        <div className="card bg-sky-900 shadow-xl flex-1 h-full">
           <figure className="px-10 pt-10">
             <img
               src="https://i.ibb.co/cwXPVRW/data-transfer-databases-78370-6681.jpg"
@@ -47,6 +57,7 @@ const Service = () => {
            
           </div>
         </div>
+          </Fade>
       </div>
     </div>
   );
