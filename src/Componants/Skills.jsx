@@ -9,10 +9,10 @@ const Skills = () => {
     <div>
       <h2 className="font-bold text-5xl text-center text-orange-700">Skils</h2>
       
-      <div className="px-5 py-14 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="px-5 py-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <Zoom>
         
-        <div className="card bg-sky-900  shadow-4xl">
+        <div className="card bg-sky-900  shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-orange-400"><FaHtml5/></p>
@@ -27,7 +27,7 @@ const Skills = () => {
         </Zoom>
         <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-blue-400"><FaCss3Alt/></p>
@@ -42,7 +42,7 @@ const Skills = () => {
         </Zoom>
         <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-green-400"><RiTailwindCssFill/></p>
@@ -57,7 +57,7 @@ const Skills = () => {
       </Zoom>
       <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-yellow-400"><IoLogoJavascript/></p>
@@ -72,7 +72,7 @@ const Skills = () => {
         </Zoom>
         <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-blue-400"><FaReact/></p>
@@ -87,7 +87,7 @@ const Skills = () => {
       </Zoom>
       <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-pink-400">
@@ -103,7 +103,7 @@ const Skills = () => {
         </Zoom>
         <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-blue-200">
@@ -119,7 +119,7 @@ const Skills = () => {
         </Zoom>
         <Zoom>
         
-        <div className="card bg-sky-900 shadow-4xl">
+        <div className="card bg-sky-900 shadow-4xl h-full">
           <figure className="px-10 pt-10">
             
             <p className="text-6xl text-green-400">

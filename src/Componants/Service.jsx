@@ -6,7 +6,7 @@ const Service = () => {
       <h2 className="font-bold text-4xl text-center text-orange-800">
         My Service
       </h2>
-      <div className="flex md:flex-row flex-col gap-6 py-10 px-5 text-white">
+      <div className="flex lg:flex-row flex-col gap-6 py-10 px-5 text-white">
         <Fade direction="left">
 
         <div className="card bg-sky-900 shadow-xl flex-1 h-full">

@@ -25,9 +25,9 @@ const Projects = () => {
               <Link target="_blank" to="https://github.com/Alamin573190/Assignment-11-client-site" className="btn bg-orange-300">
                 Client site
               </Link>
-              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-11-server-site" className="btn bg-orange-300">Server site</Link><br />
+              <Link target="_blank" to="https://github.com/Alamin573190/Assignment-11-server-site" className="btn bg-orange-300">Server site</Link> <br /> 
 
-              <Link target="_blank" to="https://assaignment-eleven.web.app/" className="btn bg-orange-300 ">Live   link</Link>
+              <Link target="_blank" to="https://assaignment-eleven.web.app/" className="btn bg-orange-300 md:ml-[-18px] lg:ml-0 ">Live   link</Link>
             </div>
           </div>
           </Zoom>
@@ -50,7 +50,7 @@ const Projects = () => {
               </Link>
               <Link target="_blank" to="https://github.com/Alamin573190/Assignment-12-server-site" className="btn bg-orange-300">Server site</Link><br />
 
-              <Link target="_blank" to="https://fitnesspal-assignment.web.app/" className="btn bg-orange-300 ">Live link</Link>
+              <Link target="_blank" to="https://fitnesspal-assignment.web.app/" className="btn bg-orange-300 md:ml-[-18px] lg:ml-0  ">Live link</Link>
             </div>
           </div>
           </Zoom>
@@ -70,7 +70,7 @@ const Projects = () => {
               </Link>
               <Link target="_blank" to="https://github.com/Alamin573190/Assignment-10-server-site" className="btn bg-orange-300">Server site</Link><br />
 
-              <Link target="_blank" to="https://assaignment-ten-4a605.web.app/" className="btn bg-orange-300 ">Live link</Link>
+              <Link target="_blank" to="https://assaignment-ten-4a605.web.app/" className="btn bg-orange-300 md:ml-[-18px] lg:ml-0  ">Live link</Link>
             </div>
           </div>
           </Zoom>
