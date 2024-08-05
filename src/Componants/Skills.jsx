@@ -78,7 +78,7 @@ const Skills = () => {
             <p className="text-6xl text-blue-400"><FaReact/></p>
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">Rect</h2>
+            <h2 className="text-white font-bold text-4xl">React</h2>
             <div className="card-actions">
               
             </div>

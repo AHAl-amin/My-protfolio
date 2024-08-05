@@ -100,7 +100,7 @@ const Banner = () => {
             <button className="btn btn-outline btn-error">
               <Link
                 className="text-black font-bold"
-                to="https://drive.google.com/u/0/uc?id=15n24ONvLTMkgMsMHkwqvaVWSQf8bkyTAP&export=download"
+                to="https://drive.google.com/u/0/uc?id=15n24ONvLTMkgMsMHkwqvaVWSQf8bkyTA&export=download#mrlaboratory"
               >
                 Download resume
               </Link>
