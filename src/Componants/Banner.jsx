@@ -41,7 +41,7 @@ const Banner = () => {
             />
           </h1>
 
-          <h1 className=" text-4xl font-bold mt-5">Jr. Web developer.</h1>
+          <h1 className=" text-4xl font-bold mt-5">Web developer.</h1>
           <p className="py-6 font-semibold">
             Hello, I'm Alamin Hossain.I have been working in web development for
             2 years. I am a passionate and skilled web developer with expertise
