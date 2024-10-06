@@ -12,7 +12,7 @@ const Footer = () => {
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <div className="text-3xl flex gap-4 mt-5 w-1/5 lg:mx-0 mx-auto">
               <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://www.facebook.com/profile.php?id=100052719871178" target="_blank"><FaFacebookF /></a>
-              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://github.com/Alamin573190" target="_blank"><FiGithub/></a>
+              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://github.com/AHAl-amin" target="_blank"><FiGithub/></a>
               <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://www.linkedin.com/in/al-amin-hossain-339463319/" target="_blank"><FaLinkedinIn/></a>
 
              

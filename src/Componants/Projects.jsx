@@ -11,7 +11,7 @@ const Projects = () => {
         <div className="card bg-sky-700 text-white w-full shadow-xl">
           <Zoom>
 
-          <div className="card-body items-center text-center h-full">
+          <div className="card-body items-center text-center h-full rounded-xl border-l-8  border-orange-400 hover:border-blue-300 duration-300 ">
             <h2 className="card-title text-3xl font-bold">Blog</h2>
             <p className="text-semibold text-gray-300 pb-6">
               A blog website is an online platform where individuals or groups
@@ -32,10 +32,10 @@ const Projects = () => {
           </div>
           </Zoom>
         </div>
-        <div className="card  bg-sky-700 text-white w-full  shadow-xl ">
+        <div className="card  bg-sky-700 text-white w-full  shadow-xl  ">
           <Zoom>
 
-          <div className="card-body items-center text-center space-y-3 h-full">
+          <div className="card-body items-center text-center space-y-3 h-full border-l-8 border-orange-400  hover:border-blue-300 duration-300 rounded-xl ">
             <h2 className="card-title text-3xl font-bold">FitnessPal</h2>
             <p className="text-semibold text-gray-300 pb-12 ">
               FitnessPal boasts an extensive food database with over 11 million
@@ -58,7 +58,7 @@ const Projects = () => {
         <div className="card  bg-sky-700 text-white w-full  shadow-xl">
            <Zoom>
             
-          <div className="card-body items-center text-center h-full">
+          <div className="card-body items-center text-center h-full border-l-8 border-orange-400 hover:border-blue-300 duration-300 rounded-xl ">
             <h2 className="card-title text-3xl font-bold">Love to Travel</h2>
             <p className="text-semibold text-gray-300">
             A travel website serves as an online platform that provides information, services, and resources related to travel. These websites cater to various aspects of travel, including booking flights and accommodations, offering travel guides and tips, and showcasing destinations through articles, photos, and videos.Allows users to search for flights, hotels, car rentals, and vacation packages.

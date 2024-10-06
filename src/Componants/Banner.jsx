@@ -41,7 +41,7 @@ const Banner = () => {
             />
           </h1>
 
-          <h1 className=" text-4xl font-bold mt-5">Web developer.</h1>
+          <h1 className=" text-4xl font-bold mt-5">Jr. Web developer.</h1>
           <p className="py-6 font-semibold">
             Hello, I'm Alamin Hossain.I have been working in web development for
             2 years. I am a passionate and skilled web developer with expertise
@@ -66,7 +66,7 @@ const Banner = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/Alamin573190"
+              href="https:https://github.com/AHAl-amin"
               target="_blank"
               className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
             >
@@ -92,7 +92,7 @@ const Banner = () => {
             <button className="btn btn-outline btn-error">
               <Link
                 className="text-black font-bold"
-                to="https://drive.google.com/uc?id=1cdvMVwNazybc_6Y9Big0zKFTa5VgtSm-&export=download#mrlaboratory"
+                to="https://drive.google.com/uc?id=1LAB5w60nXZKVsZbbexGcmY_jbYOxGqtM&export=download#mrlaboratory"
               >
                 Download CV
               </Link>
@@ -100,7 +100,7 @@ const Banner = () => {
             <button className="btn btn-outline btn-error">
               <Link
                 className="text-black font-bold"
-                to="https://drive.google.com/u/0/uc?id=15n24ONvLTMkgMsMHkwqvaVWSQf8bkyTA&export=download#mrlaboratory"
+                to="https://drive.google.com/u/0/uc?id=11o0aMr_xrl-MAiwsxftHlrewp_ff7OC1&export=download#mrlaboratory"
               >
                 Download resume
               </Link>

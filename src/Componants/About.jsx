@@ -97,7 +97,7 @@ const About = () => {
               </a>
               <a
                 className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl"
-                href="https://github.com/Alamin573190"
+                href="https:https://github.com/AHAl-amin"
                 target="_blank"
               >
                 <FiGithub />
