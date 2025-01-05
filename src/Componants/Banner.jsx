@@ -1,3 +1,4 @@
+import img1 from '../assets/photo.png'
 import {
   FaFacebook,
   FaGithub,
@@ -20,8 +21,8 @@ const Banner = () => {
         <Roll>
 
           <img
-            src="https://i.ibb.co/x2wkVkr/Whats-App-Image-2024-07-04-at-10-43-40-AM.jpg"
-            className=" rounded-full shadow-3xl lg:h-[400px] lg:w-2/3 h-[300px] w-[300px] mx-auto  "
+            src={img1}
+            className=" rounded-full border-4 border-blue-900 shadow-3xl lg:h-[400px] lg:w-2/3 h-[300px] w-[300px] mx-auto  "
           />
         </Roll>
         
@@ -31,10 +32,11 @@ const Banner = () => {
           <h1 className="text-3xl font-bold text-orange-800">
             <Typewriter
               className="text-red-400"
-              words={["I'm Al-amin "]}
+              words={["I'm Al-amin "] }
+              
               loop={Infinity}
               cursor
-              cursorStyle="_ "
+              cursorStyle="_"
               typeSpeed={80}
               deleteSpeed={70}
               delaySpeed={1000}
