@@ -45,10 +45,8 @@ const Education = () => {
             </span>{" "}
             Experience
           </h1>
-          <h1 className="text-3xl font-bold text-green-400">Jr. Web Development</h1>
-          <h2 className="font-bold md:text-2xl text-[18px]">
-            Kurua High School,Shreebordi,Sherpur
-          </h2>
+          <h1 className="text-3xl font-bold text-green-400">Jr. Web Developer.</h1>
+         
           <p className="text-gray-300 font-semibold">
           Self-Employed / Freelance <br />
 

@@ -37,7 +37,7 @@ const About = () => {
             </Zoom>
             <Zoom>
               <h1 className="text-xl md:text-3xl font-bold text-green-400">
-                Front End Web Developer.
+                Full Stack Web Developer.
               </h1>
             </Zoom>
             <Zoom>
