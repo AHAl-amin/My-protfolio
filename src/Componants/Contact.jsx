@@ -4,8 +4,15 @@ import { useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
-  const notify = () => toast("Successfully send your message");
   const form = useRef();
+  // data reset ar jonno
+  
+  // toast ar jonno
+  const notify = () => toast("Successfully send your message");
+ 
+ 
+
+// email send ar jonno fucntion
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,6 +26,8 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          notify(); // Show the toast notification
+          form.current.reset(); //
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -85,27 +94,15 @@ const Contact = () => {
             </div>
             <div className="form-control mt-6">
             
-              <button onClick={notify} className="btn bg-sky-800 text-white">Send</button>
+              <button  className="btn bg-sky-800 text-white">Send</button>
             </div>
+            <ToastContainer/>
           </form>
-          <ToastContainer/>
             </div>
+        
             </Fade>
         
-          {/* <Fade direction="up">
-          <div>
-          <form ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" name="from_name" />
-              <label>Email</label>
-              <input type="email" name="from_email" />
-              <label>Message</label>
-              <textarea name="message" />
-              <input type="submit" value="Send" />
-            </form>
-          </div>
-            
-          </Fade> */}
+          
         </div>
       </div>
     </div>
