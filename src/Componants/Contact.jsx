@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import img1 from '../assets/contact.png'
 
 const Contact = () => {
   const form = useRef();
@@ -40,19 +41,20 @@ const Contact = () => {
       <h2 className="font-bold text-4xl text-center text-orange-800">
         Contact
       </h2>
-      <div className="flex lg:flex-row flex-col gap-10 py-10 md:px-10 px-5">
+      <div className="flex lg:flex-row flex-col lg:gap-28 py-10 md:px-10 px-5 items-center">
         <Fade direction="up">
         
-         <div className="flex-1 text-gray-300 font-bold md:text-[27px] text-[16px] space-y-3 flex flex-col justify-center items-center">
-            <p>Al-amin Hossain</p>
-            <p>Email : mdalaminhossain573190@gmail.com</p>
-            <p>Phone : +8801919457711</p>
-            <p>Framgate,Dhaka,Bangladesh</p>
+         <div className="w-full flex-1">
+            {/* // <p>Al-amin Hossain</p>
+            // <p>Email : mdalaminhossain573190@gmail.com</p>
+            // <p>Phone : +8801919457711</p>
+            // <p>Framgate,Dhaka,Bangladesh</p> */}
+            <img src={img1} alt="img"  />
           </div>
         
         </Fade>
 
-        <div className="flex-1">
+        <div className="w-full flex-1">
           <Fade direction="up">
        
             <div>
