@@ -5,137 +5,38 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 
 const Skills = () => {
+  const skills = [
+    { name: "HTML", icon: FaHtml5, color: "text-orange-400" },
+    { name: "CSS", icon: FaCss3Alt, color: "text-blue-400" },
+    { name: "Tailwind CSS", icon: RiTailwindCssFill, color: "text-cyan-400" },
+    { name: "JavaScript", icon: IoLogoJavascript, color: "text-yellow-400" },
+    { name: "React", icon: FaReact, color: "text-cyan-400" },
+    { name: "Express.js", icon: SiExpress, color: "text-light" },
+    { name: "Node.js", icon: FaNode, color: "text-green-400" },
+    { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
+  ];
+
   return (
-    <div>
-      <h2 className="font-bold text-5xl text-center text-orange-700">Skils</h2>
-      
-      <div className="px-5 py-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-      <Zoom>
+    <section className="bg-gradient-primary py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="section-title text-accent mb-16 md:text-2xl text-xl flex justify-center font-bold">My Skills</h2>
         
-        <div className="card bg-sky-900  shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-orange-400"><FaHtml5/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">HTML</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skills.map((skill, index) => (
+            <Zoom key={index}>
+              <div className="card bg-secondary border border-accent border-opacity-20 card-hover h-full flex flex-col items-center justify-center p-6 rounded-lg">
+                <figure className="pb-6">
+                  <skill.icon className={`text-6xl ${skill.color}`} />
+                </figure>
+                <div className="card-body items-center text-center p-0">
+                  <h2 className="text-light font-bold text-xl">{skill.name}</h2>
+                </div>
+              </div>
+            </Zoom>
+          ))}
         </div>
-        </Zoom>
-        <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-blue-400"><FaCss3Alt/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">CSS</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-        </Zoom>
-        <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-green-400"><RiTailwindCssFill/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">Tailwind CSS</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-      </Zoom>
-      <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-yellow-400"><IoLogoJavascript/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">Java script</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-        </Zoom>
-        <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-blue-400"><FaReact/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">React</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-      </Zoom>
-      <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-pink-400">
-            <SiExpress/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">Express</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-        </Zoom>
-        <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-blue-200">
-            <FaNode/></p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">Node.js</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-        </Zoom>
-        <Zoom>
-        
-        <div className="card bg-sky-900 shadow-4xl h-full">
-          <figure className="px-10 pt-10">
-            
-            <p className="text-6xl text-green-400">
-            <SiMongodb/>
-            </p>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-white font-bold text-4xl">MongoDB</h2>
-            <div className="card-actions">
-              
-            </div>
-          </div>
-        </div>
-        </Zoom>
       </div>
-    </div>
+    </section>
   );
 };
 

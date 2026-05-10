@@ -14,97 +14,89 @@ import {  Roll,  } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
-    <div className="hero h-full  md:py-5 ">
-      <div className="hero-content flex-col lg:flex-row-reverse gap-10 p-10 mt-12">
-        <div className="flex-1 ">
-         
-        <Roll>
-
-          <img
-            src={img1}
-            className=" rounded-full border-4 border-blue-900 shadow-3xl lg:h-[400px] lg:w-2/3 h-[300px] w-[300px] mx-auto  "
-          />
-        </Roll>
-        
-        </div>
+    <div className="hero min-h-screen bg-gradient-primary pt-20">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-8 px-4 md:px-8 max-w-6xl">
         <div className="flex-1">
-          <h1 className=" text-2xl font-bold">Hello!</h1>
-          <h1 className="text-3xl font-bold text-orange-800">
+          <Roll>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent to-accentDark rounded-full opacity-75 blur-2xl"></div>
+              <img
+                src={img1}
+                alt="Al-amin"
+                className="relative rounded-full border-4 border-accent shadow-2xl lg:h-[450px] lg:w-[450px] h-[300px] w-[300px] mx-auto object-cover"
+              />
+            </div>
+          </Roll>
+        </div>
+        <div className="flex-1 text-light">
+          <h1 className="text-xl font-medium text-accent mb-2">Hello! 👋</h1>
+          <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <Typewriter
-              className="text-red-400"
-              words={["I'm Al-amin "] }
-              
+              words={["I'm Al-amin", "I'm a Developer", "I'm Creative"]}
               loop={Infinity}
               cursor
-              cursorStyle="_"
-              typeSpeed={80}
-              deleteSpeed={70}
-              delaySpeed={1000}
+              cursorStyle="|"
+              typeSpeed={60}
+              deleteSpeed={50}
+              delaySpeed={1500}
             />
-          </h1>
-
-          <h1 className=" text-4xl font-bold mt-5">Web developer.</h1>
-          <p className="py-6 font-semibold">
-            Hello, I'm Alamin Hossain.I have been working in web development for
-            2 years. I am a passionate and skilled web developer with expertise
-            in HTML, CSS, Tailwind CSS, JavaScript, React, Express, and MongoDB.
-            I enjoy creating efficient, visually appealing, and user-friendly
-            web applications. My goal is to continuously improve my skills and
-            contribute to exciting projects that make a difference.
+          </h2>
+          <h3 className="text-3xl font-semibold text-accent mb-6">Full Stack Web Developer</h3>
+          
+          <p className="text-light text-lg leading-relaxed mb-8 max-w-2xl">
+            I'm Alamin Hossain, a passionate full-stack web developer with 2+ years of experience. 
+            I specialize in building efficient, scalable, and user-friendly web applications using modern technologies.
+            My expertise includes HTML, CSS, Tailwind CSS, JavaScript, React, Express, and MongoDB.
           </p>
-          <div className="text-[25px] flex gap-5 my-5 ">
+
+          <div className="flex gap-4 mb-8 text-2xl">
             <a
               href="https://www.facebook.com/profile.php?id=100052719871178"
               target="_blank"
-              className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
+              rel="noreferrer"
+              className="p-3 bg-secondary rounded-lg text-accent hover:bg-accent hover:text-secondary transition transform hover:scale-110"
             >
               <FaFacebook />
             </a>
             <a
               href="https://www.linkedin.com/in/al-amin-hossain-339463319/"
               target="_blank"
-              className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
+              rel="noreferrer"
+              className="p-3 bg-secondary rounded-lg text-accent hover:bg-accent hover:text-secondary transition transform hover:scale-110"
             >
               <FaLinkedin />
             </a>
             <a
-              href="https:https://github.com/AHAl-amin"
+              href="https://github.com/AHAl-amin"
               target="_blank"
-              className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
+              rel="noreferrer"
+              className="p-3 bg-secondary rounded-lg text-accent hover:bg-accent hover:text-secondary transition transform hover:scale-110"
             >
               <FaGithub />
             </a>
+           
             <a
-              href="#"
+              href="https://www.instagram.com/ah_al_amin_hossain?igsh=dmduaW5zZThkYmJk"
               target="_blank"
-              className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              className="bg-blue-500 hover:bg-sky-700 ... p-2 rounded"
+              rel="noreferrer"
+              className="p-3 bg-secondary rounded-lg text-accent hover:bg-accent hover:text-secondary transition transform hover:scale-110"
             >
               <FaInstagram />
             </a>
           </div>
 
-          <div className="space-x-3">
-            <button className="btn btn-outline btn-error">
-              <Link
-                className="text-black font-bold"
-                to="https://drive.google.com/uc?id=1LAB5w60nXZKVsZbbexGcmY_jbYOxGqtM&export=download#mrlaboratory"
+          <div className="flex flex-wrap gap-4">
+            <button className="btn-primary-custom">
+              <a
+                href="https://drive.google.com/uc?id=1LAB5w60nXZKVsZbbexGcmY_jbYOxGqtM&export=download"
+                download
               >
                 Download CV
-              </Link>
+              </a>
             </button>
-            <button className="btn btn-outline btn-error">
-              <Link
-                className="text-black font-bold"
-                to="https://drive.google.com/u/0/uc?id=11o0aMr_xrl-MAiwsxftHlrewp_ff7OC1&export=download#mrlaboratory"
-              >
-                Download resume
+            <button className="btn-outline-custom">
+              <Link to="/contact">
+                Get in Touch
               </Link>
             </button>
           </div>

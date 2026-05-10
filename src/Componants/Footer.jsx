@@ -1,29 +1,74 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
-  return (
-    <div className="">
-      <footer className="footer bg-gray-700 text-neutral-content items-center p-4 py-10 rounded-t-[30px] flex justify-around md:flex-row flex-col-reverse">
-       <div>
-       <aside className="flex gap-6 items-center">
-          <img src="https://i.ibb.co/x2wkVkr/Whats-App-Image-2024-07-04-at-10-43-40-AM.jpg" alt=""className="w-[50px] h-[50px] rounded-full" />
-          <p className="font-bold md:text-xl text-[12px]">Copyright © ${new Date().getFullYear()} - All right reserved by Al-amin</p>
-        </aside>
-       </div>
-       <div>
-       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <div className="text-3xl flex gap-4 mt-5 w-1/5 lg:mx-0 mx-auto">
-              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://www.facebook.com/profile.php?id=100052719871178" target="_blank"><FaFacebookF /></a>
-              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://github.com/AHAl-amin" target="_blank"><FiGithub/></a>
-              <a className="bg-sky-700 hover:bg-sky-400 ease-in duration-300 p-2 rounded-xl" href="https://www.linkedin.com/in/al-amin-hossain-339463319/" target="_blank"><FaLinkedinIn/></a>
+  const currentYear = new Date().getFullYear();
 
-             
+  return (
+    <footer className="bg-secondary border-t border-accent border-opacity-20 text-light py-12 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* Brand Section */}
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-2xl font-bold">
+              <span className="text-accent">Al</span>amin.
+            </h3>
+            <p className="text-light/70 mt-2">Full Stack Web Developer</p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="flex flex-col items-center">
+            <h4 className="text-lg font-semibold text-accent mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-center text-light/80">
+              <li><a href="#home" className="hover:text-accent transition">Home</a></li>
+              <li><a href="#projects" className="hover:text-accent transition">Projects</a></li>
+              <li><a href="#contact" className="hover:text-accent transition">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex flex-col items-center md:items-end">
+            <h4 className="text-lg font-semibold text-accent mb-4">Follow Me</h4>
+            <div className="flex gap-4 text-2xl">
+              <a 
+                className="p-2 bg-accent text-secondary rounded-lg hover:bg-accentDark transition transform hover:scale-110"
+                href="https://www.facebook.com/profile.php?id=100052719871178"
+                target="_blank"
+                rel="noreferrer"
+                title="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+              <a 
+                className="p-2 bg-accent text-secondary rounded-lg hover:bg-accentDark transition transform hover:scale-110"
+                href="https://github.com/AHAl-amin"
+                target="_blank"
+                rel="noreferrer"
+                title="GitHub"
+              >
+                <FaGithub />
+              </a>
+              <a 
+                className="p-2 bg-accent text-secondary rounded-lg hover:bg-accentDark transition transform hover:scale-110"
+                href="https://www.linkedin.com/in/al-amin-hossain-339463319/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
-        </nav>
-       </div>
-      </footer>
-    </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-accent border-opacity-20 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left text-light/70 text-sm">
+            <p>Copyright © {currentYear} - All rights reserved by Al-amin Hossain</p>
+            <p className="mt-4 md:mt-0">Built with React & Tailwind CSS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

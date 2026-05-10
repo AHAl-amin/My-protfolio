@@ -1,17 +1,17 @@
 
 
 import './App.css'
+import Navber from './Componants/Navber'
+import Home from './Componants/Home'
+import Footer from './Componants/Footer'
 
 function App() {
- 
-
   return (
-    <>
-    
-      <h1 className='font-bold text-6xl text-red-400'>Vite + React</h1>
-     
-     
-    </>
+    <div className="bg-gradient-primary min-h-screen">
+      <Navber />
+      <Home />
+      <Footer />
+    </div>
   )
 }
 

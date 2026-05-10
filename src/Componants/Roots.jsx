@@ -23,7 +23,7 @@ const Roots = () => {
         await console.log(container);
     }, []);
     return (
-        <div className='bg-gradient-to-r from-violet-500 to-fuchsia-500'>
+        <div className='bg-gradient-primary min-h-screen'>
             <div className='h-[65px]'>
             <Navber ></Navber>
             </div>
@@ -37,7 +37,7 @@ const Roots = () => {
             options={{
                 background: {
                     color: {
-                        value: "black",
+                        value: "transparent",
                     },
                 },
                 fpsLimit: 120,
@@ -65,13 +65,13 @@ const Roots = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#06B6D4",
                     },
                     links: {
-                        color: "#ffffff",
+                        color: "#06B6D4",
                         distance: 150,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 0.3,
                         width: 1,
                     },
                     move: {
@@ -81,7 +81,7 @@ const Roots = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 4,
                         straight: false,
                     },
                     number: {
@@ -89,16 +89,16 @@ const Roots = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 50,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.4,
                     },
                     shape: {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 3 },
                     },
                 },
                 detectRetina: true,

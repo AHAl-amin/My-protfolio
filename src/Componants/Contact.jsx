@@ -6,14 +6,12 @@ import img1 from '../assets/contact.png'
 
 const Contact = () => {
   const form = useRef();
-  // data reset ar jonno
   
-  // toast ar jonno
-  const notify = () => toast("Successfully send your message");
+  const notify = () => toast.success("Message sent successfully! I'll get back to you soon.", {
+    position: "top-right",
+    autoClose: 3000,
+  });
  
- 
-
-// email send ar jonno fucntion
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,87 +25,80 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          notify(); // Show the toast notification
-          form.current.reset(); //
+          notify();
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
+          toast.error("Failed to send message. Please try again.");
         }
       );
   };
 
   return (
-    <div className="">
-      <h2 className="font-bold text-4xl text-center text-orange-800">
-        Contact
-      </h2>
-      <div className="flex lg:flex-row flex-col lg:gap-28 py-10 md:px-10 px-5 items-center">
-        <Fade direction="up">
+    <section className="bg-gradient-primary  p-4">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="section-title text-accent mb-8 md:text-2xl text-xl flex justify-center font-bold">Get In Touch</h2>
         
-         <div className="w-full flex-1">
-            {/* // <p>Al-amin Hossain</p>
-            // <p>Email : mdalaminhossain573190@gmail.com</p>
-            // <p>Phone : +8801919457711</p>
-            // <p>Framgate,Dhaka,Bangladesh</p> */}
-            <img src={img1} alt="img"  />
-          </div>
-        
-        </Fade>
-
-        <div className="w-full flex-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <Fade direction="up">
-       
-            <div>
+            <div className="flex justify-center">
+              <img src={img1} alt="Contact" className="w-full max-w-md rounded-lg" />
+            </div>
+          </Fade>
 
-            <form ref={form}  onSubmit={sendEmail}>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Your Name</span>
-              </label>
-              <input
-                type="text"
-                placeholder="name"
-                className="input input-bordered"
-                name="from_name"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Your Email</span>
-              </label>
-              <input
-                type="email"
-                placeholder="Email"
-                className="input input-bordered"
-                name="from_email"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Your Message</span>
-              </label>
-              <textarea
-                className="textarea textarea-primary"
-                placeholder="Write now"
-                name="message"
-              ></textarea>
-            </div>
-            <div className="form-control mt-6">
-            
-              <button  className="btn bg-sky-800 text-white">Send</button>
-            </div>
-            <ToastContainer/>
-          </form>
-            </div>
-        
+          <div>
+            <Fade direction="up">
+              <form ref={form} onSubmit={sendEmail} className="space-y-6">
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-accent font-semibold">Your Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="input input-bordered bg-secondary text-light placeholder-light/50 border-accent border-opacity-30 focus:border-accent focus:outline-none"
+                    name="from_name"
+                    required
+                  />
+                </div>
+
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-accent font-semibold">Your Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="input input-bordered bg-secondary text-light placeholder-light/50 border-accent border-opacity-30 focus:border-accent focus:outline-none"
+                    name="from_email"
+                    required
+                  />
+                </div>
+
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-accent font-semibold">Your Message</span>
+                  </label>
+                  <textarea
+                    className="textarea textarea-bordered bg-secondary text-light placeholder-light/50 border-accent border-opacity-30 focus:border-accent focus:outline-none"
+                    placeholder="Write your message here..."
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button className="btn-primary-custom w-full">
+                  Send Message
+                </button>
+              </form>
+              <ToastContainer />
             </Fade>
-        
-          
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
