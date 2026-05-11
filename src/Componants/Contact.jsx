@@ -1,36 +1,47 @@
 import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import img1 from '../assets/contact.png'
 
 const Contact = () => {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
   
-  const notify = () => toast.success("Message sent successfully! I'll get back to you soon.", {
-    position: "top-right",
-    autoClose: 3000,
-  });
+  const notify = () => toast.success("Message sent successfully! I'll get back to you soon.");
  
   const sendEmail = (e) => {
     e.preventDefault();
+    const currentForm = e.target;
+
+    if (!(currentForm instanceof HTMLFormElement)) {
+      const err = "Form element not found. Please refresh and try again.";
+      console.error(err, currentForm);
+      toast.error(err);
+      return;
+    }
+
+    setIsSending(true);
 
     emailjs
-      .sendForm("service_9u7tptj", 
-        "template_jetnnvk",
-         form.current,
-          {
-        publicKey: "gUihkbIbdorz3rqgs",
-      })
+      .sendForm(
+        "service_jeoxzpr",
+        "template_ag4bvdg",
+        currentForm,
+        "yUuMT_z7WJgMA2KbG"
+      )
       .then(
         () => {
           console.log("SUCCESS!");
           notify();
-          form.current.reset();
+          currentForm.reset();
+          setIsSending(false);
         },
         (error) => {
-          console.log("FAILED...", error.text);
-          toast.error("Failed to send message. Please try again.");
+          console.error("FAILED...", error);
+          const errorMessage = error.text || error.message || JSON.stringify(error);
+          toast.error(`Failed to send message: ${errorMessage}`);
+          setIsSending(false);
         }
       );
   };
@@ -58,7 +69,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Enter your name"
                     className="input input-bordered bg-secondary text-light placeholder-light/50 border-accent border-opacity-30 focus:border-accent focus:outline-none"
-                    name="from_name"
+                    name="name"
                     required
                   />
                 </div>
@@ -71,7 +82,7 @@ const Contact = () => {
                     type="email"
                     placeholder="Enter your email"
                     className="input input-bordered bg-secondary text-light placeholder-light/50 border-accent border-opacity-30 focus:border-accent focus:outline-none"
-                    name="from_email"
+                    name="email"
                     required
                   />
                 </div>
@@ -89,8 +100,8 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button className="btn-primary-custom w-full border border-accent hover:bg-accent/20 hover:text-[fffffff] transition transform py-3 px-6 rounded-lg" type="submit">
-                  Send Message
+                <button className="btn-primary-custom w-full border border-accent hover:bg-accent/20 hover:text-[fffffff] transition transform py-3 px-6 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed" type="submit" disabled={isSending}>
+                  {isSending ? "Sending..." : "Send Message"}
                 </button>
               </form>
               <ToastContainer />
@@ -98,6 +109,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer position="top-right" autoClose={3000} />
     </section>
   );
 };
