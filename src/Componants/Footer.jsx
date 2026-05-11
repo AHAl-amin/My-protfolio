@@ -1,4 +1,5 @@
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -19,9 +20,9 @@ const Footer = () => {
           <div className="flex flex-col items-center">
             <h4 className="text-lg font-semibold text-accent mb-4">Quick Links</h4>
             <ul className="space-y-2 text-center text-light/80">
-              <li><a href="#home" className="hover:text-accent transition">Home</a></li>
-              <li><a href="#projects" className="hover:text-accent transition">Projects</a></li>
-              <li><a href="#contact" className="hover:text-accent transition">Contact</a></li>
+              <li><NavLink to="/" className="hover:text-accent transition">Home</NavLink></li>
+              <li><NavLink to="/projects" className="hover:text-accent transition">Projects</NavLink></li>
+              <li><NavLink to="/contact" className="hover:text-accent transition">Contact</NavLink></li>
             </ul>
           </div>
 

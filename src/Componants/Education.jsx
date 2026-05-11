@@ -29,12 +29,22 @@ const Education = () => {
 
                 {/* Diploma */}
                 <div className="bg-secondary border-l-4 border-accent p-6 rounded-lg card-hover">
-                  <h3 className="text-2xl font-bold text-accent mb-2">Diploma in Engineering</h3>
+                  <h3 className="text-2xl font-bold text-accent mb-2">Diploma in Computer Engineering</h3>
                   <h4 className="text-light font-semibold text-lg mb-3">
                     Sherpur Polytechnic Institute
                   </h4>
                   <p className="text-light/80">
-                    Computer Science & Technology student. Currently in 8th semester with expected graduation in 2024. Focus on practical engineering skills and modern technologies.
+                    Passed Diploma in Computer Engineering in 2024 with a CGPA of 3.79. Focused on practical computer engineering coursework and strong technical foundations.
+                  </p>
+                </div>
+
+                <div className="bg-secondary border-l-4 border-accent p-6 rounded-lg card-hover">
+                  <h3 className="text-2xl font-bold text-accent mb-2">B.Sc. in Computer Science & Engineering</h3>
+                  <h4 className="text-light font-semibold text-lg mb-3">
+                    Northern University Bangladesh
+                  </h4>
+                  <p className="text-light/80">
+                    Currently studying CSE at Northern University Bangladesh. Continuing academic progress while building real-world Software development experience.
                   </p>
                 </div>
               </div>
@@ -50,26 +60,16 @@ const Education = () => {
                 </h2>
 
                 <div className="bg-secondary border-l-4 border-accent p-6 rounded-lg card-hover">
-                  <h3 className="text-2xl font-bold text-accent mb-2">Jr. Full Stack Web Developer</h3>
+                  <h3 className="text-2xl font-bold text-accent mb-2">Jr. Frontend Developer</h3>
                   <h4 className="text-light font-semibold text-lg mb-3">
-                    Self-Employed / Freelance
+                    JVAI
                   </h4>
                   <div className="text-light/80 space-y-2">
-                    <p>• Developed web applications using MERN stack (MongoDB, Express, React, Node.js)</p>
-                    <p>• Built responsive and interactive user interfaces with React and Tailwind CSS</p>
-                    <p>• Created RESTful APIs and managed databases</p>
-                    <p>• Collaborated with clients and solved complex problems</p>
-                    <p>• Stayed updated with industry trends and best practices</p>
+                    <p>• Working continuously at JVAI since January 21, 2025.</p>
+                    <p>• Developing user-friendly frontend interfaces using modern web technologies.</p>
+                    <p>• Collaborating with teams to deliver responsive and accessible applications.</p>
+                    <p>• Maintaining and improving existing frontend codebases for better performance.</p>
                   </div>
-                </div>
-
-                <div className="bg-secondary border-l-4 border-accent p-6 rounded-lg card-hover">
-                  <h3 className="text-2xl font-bold text-accent mb-2">Technical Skills</h3>
-                  <p className="text-light/80">
-                    Frontend: React, JavaScript, HTML, CSS, Tailwind CSS<br />
-                    Backend: Node.js, Express.js, MongoDB, REST APIs<br />
-                    Tools: Git, VS Code, Figma
-                  </p>
                 </div>
               </div>
             </Fade>

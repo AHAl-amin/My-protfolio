@@ -89,7 +89,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button className="btn-primary-custom w-full">
+                <button className="btn-primary-custom w-full border border-accent hover:bg-accent/20 hover:text-[fffffff] transition transform py-3 px-6 rounded-lg" type="submit">
                   Send Message
                 </button>
               </form>

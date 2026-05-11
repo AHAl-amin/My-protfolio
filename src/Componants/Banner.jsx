@@ -86,15 +86,15 @@ const Banner = () => {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <button className="btn-primary-custom">
+            <button className="btn-primary-custom border hover:border-sky-400 rounded-lg py-2 px-4 border-accent hover:bg-accent hover:text-secondary transition transform ">
               <a
-                href="https://drive.google.com/uc?id=1LAB5w60nXZKVsZbbexGcmY_jbYOxGqtM&export=download"
-                download
+                href="https://drive.google.com/uc?id=18VDoZKkwjp8P-tAf370X3AY_tYQVxnWs&export=download"
+                download 
               >
                 Download CV
               </a>
             </button>
-            <button className="btn-outline-custom">
+            <button className="btn-outline-custom  border hover:border-sky-400 rounded-lg py-2 px-4 border-accent hover:bg-accent hover:text-secondary transition transform  ">
               <Link to="/contact">
                 Get in Touch
               </Link>

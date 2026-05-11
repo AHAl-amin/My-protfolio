@@ -16,7 +16,7 @@ const Home = () => {
   
 
     return (
-        <div className="">
+        <div className="" id="home">
             <Banner></Banner>
             <About></About>
             <Education></Education>
